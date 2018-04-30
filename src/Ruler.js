@@ -1,0 +1,8 @@
+import styled from 'styled-components';
+
+export const Ruler = styled.hr`
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+`;
