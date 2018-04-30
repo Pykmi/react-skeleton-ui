@@ -8,7 +8,7 @@ import { Grid, Row, OneColumn, TwoColumns, ThreeColumns, FourColumns, FiveColumn
 import { Form, TextInput, TextInputArea, RadioBox, CheckBox, Label, Fieldset, Select, Legend } from './Forms';
 
 import { Ruler } from './Ruler';
-import { H1, H2, H3, H4, H5, H6 } from './Headers';
+import { H1, H2, H3, H4, H5, H6, Link, Strong } from './Typography';
 import { ListItem, OrderedList, UnOrderedList } from './Lists';
 import { Table, Th, Td } from './Tables';
 import { Button, Submit } from './Buttons';
@@ -31,20 +31,6 @@ injectGlobal`
     margin-top: 0;
   }
 
-  strong {
-    font-weight: 600;
-  }
-
-  a {
-    color: #1EAEDB;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #0FA0CE;
-    text-decoration: none;
-  }
-
   @font-face {
     font-family: "Raleway";
     src: url('https://fonts.googleapis.com/css?family=Raleway');
@@ -52,13 +38,28 @@ injectGlobal`
 `;
 
 export {
+  /* Grid components */
   Grid, Row, OneColumn, TwoColumns, ThreeColumns, FourColumns, FiveColumns, SixColumns, 
   SevenColumns,EightColumns, NineColumns, TenColumns, ElevenColumns, TwelveColumns,
+  
+  /* Form components */
   Form, TextInput, TextInputArea, RadioBox, CheckBox, Label, Fieldset, Select, Legend,
-  H1, H2, H3, H4, H5, H6,
+
+  /* Typography components */
+  Anchor, H1, H2, H3, H4, H5, H6, Strong,
+
+  /* Helper components */
   Code, HtmlTag, SmallText, Tag,
+
+  /* Ruler component */
   Ruler,
+
+  /* List components */
   ListItem, OrderedList, UnOrderedList,
+
+  /* Table components */
   Table, Th, Td,
+
+  /* Button components */
   Button, Submit
 };
