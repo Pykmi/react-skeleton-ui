@@ -3,22 +3,22 @@
   "version": "0.0.1",
   "description": "A responsive UI boilerplate for react projects",
   "main": "build/index.js",
-  "peerDependencies": {
-    "react": "^15.5.4"
-  },
-  "dependencies": {
-    "react": "^15.5.4",
-    "styled-components": "^3.2.6",
-    "webpack": "^2.6.1"
+  "author": {
+    "name": "Tomi Kaistila",
+    "email": "tomi.kaistila@gmail.com"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "webpack"
   },
-  "author": {
-    "name": "Tomi Kaistila",
-    "email": "tomi.kaistila@gmail.com"
+  "peerDependencies": {
+    "react": "^15.5.4",
+    "styled-components": "^3.2.6"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -26,6 +26,7 @@
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "styled-components": "^3.2.6"
   }
 }
