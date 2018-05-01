@@ -1,2 +1,8 @@
+# The annoying DS_Store directory
 .DS_Store
+
+# Vendor libraries
 /node_modules
+
+# Build assets
+build/index.js

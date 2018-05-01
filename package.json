@@ -1,17 +1,31 @@
 {
   "name": "react-skeleton-ui",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A responsive UI boilerplate for react projects",
   "main": "build/index.js",
   "author": {
     "name": "Tomi Kaistila",
     "email": "tomi.kaistila@gmail.com"
   },
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "webpack"
+    "build": "NODE_ENV=production webpack -p",
+    "dev": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pykmi/react-skeleton-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pykmi/react-skeleton-ui/issues"
+  },
+  "keywords": [
+    "React",
+    "Skeleton",
+    "Styled-Components",
+    "UI"
+  ],
   "peerDependencies": {
     "react": "^15.5.4",
     "styled-components": "^3.2.6"
