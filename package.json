@@ -1,6 +1,6 @@
 {
   "name": "react-skeleton-ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A responsive UI boilerplate for react projects",
   "main": "build/index.js",
   "author": {
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack -p",
-    "dev": "webpack"
+    "build-dev": "webpack"
   },
   "repository": {
     "type": "git",

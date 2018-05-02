@@ -8,13 +8,9 @@ const Grid = styled.div`
   padding: 0 20px;
   box-sizing: border-box;
 
-  @media (min-width: 400px) {
+  @media (min-width: 550px) {
     width: 85%;
     padding: 0;
-  }
-
-  @media (min-width: 550px) {
-    width: 80%;
   }
 
   :after {
@@ -24,13 +20,34 @@ const Grid = styled.div`
   }
 `;
 
-const Column = styled.div`
+const ColumnWidth = {
+  1: '4.66666666667%',
+  2: '13.3333333333%',
+  3: '22%',
+  4: '30.6666666667%',
+  5: '39.3333333333%',
+  6: '48%',
+  7: '56.6666666667%',
+  8: '65.3333333333%',
+  9: '74.0%',
+  10: '82.6666666667%',
+  11: '91.3333333333%',
+  12: '100%',
+  OneThird: '30.6666666667%',
+  TwoThirds: '65.3333333333',
+  OneHalf: '48%'
+};
+
+export const Column = styled.div`
+  margin-top: 1.0rem;
   width: 100%;
-  float: left;
   box-sizing: border-box;
 
   @media (min-width: 550px) {
     margin-left: 4%;
+    margin-top: 0;
+    float: left;
+    width: ${props => ColumnWidth[props.cols]};
     :first-child {
       margin-left: 0;
     }
@@ -38,11 +55,14 @@ const Column = styled.div`
 `;
 
 const Row = styled.div`
-  margin-top: 1.0rem; 
   :after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  @media (min-width: 550px) {
+    margin-top: 1.0rem;
   }
 `;
 

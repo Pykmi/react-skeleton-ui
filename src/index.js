@@ -1,9 +1,7 @@
 import { React } from 'react';
 import { injectGlobal } from 'styled-components';
 
-import { Grid, Row, OneColumn, TwoColumns, ThreeColumns, FourColumns, FiveColumns, SixColumns, 
-         SevenColumns,EightColumns, NineColumns, TenColumns, ElevenColumns, TwelveColumns
-       } from './Grid';
+import { Grid, Row, Column } from './Grid';
 import { Form, TextInput, TextInputArea, RadioBox, CheckBox, Label, Fieldset, Select, Legend } from './Forms';
 import { Anchor, H1, H2, H3, H4, H5, H6, Strong } from './Typography';
 import { Ruler } from './Ruler';
@@ -267,8 +265,7 @@ injectGlobal`
 
 export {
   /* Grid components */
-  Grid, Row, OneColumn, TwoColumns, ThreeColumns, FourColumns, FiveColumns, SixColumns, 
-  SevenColumns,EightColumns, NineColumns, TenColumns, ElevenColumns, TwelveColumns,
+  Grid, Row, Column,
   
   /* Form components */
   Form, TextInput, TextInputArea, RadioBox, CheckBox, Label, Fieldset, Select, Legend,
