@@ -1,6 +1,6 @@
 {
   "name": "react-skeleton-ui",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A responsive UI boilerplate for react projects",
   "main": "build/index.js",
   "author": {
