@@ -37,19 +37,18 @@ const GutterWidth = 4;
 /* Helper to calculate true offset */
 const CalcOffset = (offset, first) => {
   const total = ColumnOffset[offset] + (first ? 0 : GutterWidth) + '%'
-  console.log(total);
   return total;
 }
 
 export const Grid = styled.div`
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 
-  @media (min-width: 550px) {
+  @media (min-width: 650px) {
     width: 85%;
     padding: 0;
   }
@@ -66,7 +65,7 @@ export const Column = styled.div`
   width: 100%;
   box-sizing: border-box;
 
-  @media (min-width: 550px) {
+  @media (min-width: 650px) {
     margin-left: ${props => props.offset ? CalcOffset(props.offset) : GutterWidth + '%' };
     margin-top: 0;
     float: left;
