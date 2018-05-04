@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+/* The Horizontal Ruler component */
 export const Ruler = styled.hr`
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
