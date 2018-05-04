@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
+/* Table component */
 const Table = styled.table`
-  width: ${props => props.fullwidth ? '100%' : ''};
-  box-sizing: ${props => props.fullwidth ? 'border-box' : ''};
+  width: ${props => props.full ? '100%' : ''};
+  box-sizing: ${props => props.full ? 'border-box' : ''};
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 2.5rem;
 `;
 
+/* Table header component */
 const Th = styled.th`
   padding: 12px 15px;
   text-align: left;
@@ -21,6 +23,7 @@ const Th = styled.th`
   }
 `;
 
+/* Table data component */
 const Td = styled.td`
   padding: 12px 15px;
   text-align: left;
