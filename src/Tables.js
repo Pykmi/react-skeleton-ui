@@ -13,6 +13,7 @@ const Table = styled.table`
   box-sizing: ${props => props.full ? 'border-box' : ''};
   border-spacing: 0;
   border-collapse: collapse;
+  border: ${props => props.borders ? '1px solid #E1E1E1' : ''};
   margin-bottom: 2.5rem;
 
   /* stripes to table rows */
@@ -27,10 +28,10 @@ const Table = styled.table`
     border-bottom: 1px solid #E1E1E1;
 
     :first-child {
-      padding-left: 0;
+      padding-left: ${props => props.borders ? '15px' : 0};
     }
     :last-child {
-      padding-right: 0;
+      padding-right: ${props => props.borders ? '15px' : 0};
     }
   }
 `;
