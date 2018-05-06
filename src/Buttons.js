@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+/* Main Button component */
+/**
+ * Props
+ * 
+ * primary  = give the button a primary color, otherwise transparent
+ * upper    = capitalize the button text
+ * nomargin = remove margins
+ */
 export const Button = styled.button`
   display: inline-block;
   height: 38px;
@@ -10,7 +18,7 @@ export const Button = styled.button`
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
-  text-transform: uppercase;
+  text-transform: ${props => props.upper ? 'uppercase' : ''};
   text-decoration: none;
   white-space: nowrap;
   background-color: ${props => props.primary ? '#33C3F0' : 'transparent'};
@@ -28,4 +36,8 @@ export const Button = styled.button`
   }
 `;
 
+/* Submit button component */
 export const Submit = Button.withComponent('input');
+
+/* Link button component */
+export const LinkButton = Button.withComponent('a');
