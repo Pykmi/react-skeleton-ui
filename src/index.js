@@ -8,7 +8,8 @@ import { Ruler } from './Ruler';
 import { ListItem, OrderedList, UnOrderedList } from './Lists';
 import { Table, Th, Td } from './Tables';
 import { Button, Submit } from './Buttons';
-import { Code, HtmlTag, SmallText, Tag } from './Helpers';
+import { Code } from './Code';
+import { HtmlTag, SmallText, Tag } from './Helpers';
 
 injectGlobal`
   html {
@@ -285,6 +286,9 @@ export {
   /* Button components */
   Button, Submit,
 
+  /* Code component */
+  Code,
+
   /* Helper components */
-  Code, HtmlTag, SmallText, Tag
+  HtmlTag, SmallText, Tag
 };
