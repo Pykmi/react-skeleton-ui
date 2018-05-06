@@ -1,6 +1,6 @@
 {
   "name": "react-skeleton-ui",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "description": "A responsive UI boilerplate for react projects",
   "main": "build/index.js",
   "author": {
@@ -41,6 +41,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
+    "prismjs": "^1.14.0",
     "styled-components": "^3.2.6"
   }
 }
