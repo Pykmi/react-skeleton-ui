@@ -1,12 +1,23 @@
 import styled from 'styled-components';
 
-/* Table component */
+/**
+ * Table component
+ * 
+ * Props
+ * 
+ * full    = make table use full width of its parent element
+ * striped = make a striped table
+ */
 const Table = styled.table`
   width: ${props => props.full ? '100%' : ''};
   box-sizing: ${props => props.full ? 'border-box' : ''};
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 2.5rem;
+
+  tr:nth-child(even) {
+    background-color: ${props => props.striped ? '#f8f8f8' : ''}
+  }
 `;
 
 /* Table header component */
