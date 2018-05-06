@@ -35,7 +35,11 @@ const Table = styled.table`
   }
 `;
 
-/* Table header component */
+/**
+ * Table header component
+ * 
+ * Depracated, will be removed
+ * */
 const Th = styled.th`
   padding: 12px 15px;
   text-align: left;
@@ -49,7 +53,11 @@ const Th = styled.th`
   }
 `;
 
-/* Table data component */
+/**
+ * Table data component
+ * 
+ * Depracated, will be removed
+ * */
 const Td = styled.td`
   padding: 12px 15px;
   text-align: left;
