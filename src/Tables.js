@@ -15,8 +15,23 @@ const Table = styled.table`
   border-collapse: collapse;
   margin-bottom: 2.5rem;
 
+  /* stripes to table rows */
   tr:nth-child(even) {
     background-color: ${props => props.striped ? '#f8f8f8' : ''}
+  }
+
+  /* styles to table header and data cells */
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+
+    :first-child {
+      padding-left: 0;
+    }
+    :last-child {
+      padding-right: 0;
+    }
   }
 `;
 
