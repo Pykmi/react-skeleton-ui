@@ -1,12 +1,8 @@
 import * as font from './theme/typography';
 import * as color from './theme/colors';
-
+import * as button from './theme/buttons';
 
 export const theme = {
-  font: {
-    face: font.face,
-    weight: font.weight
-  },
   color: {
     primary: contrast => contrast ? color.blue : color.light_blue,
     error: contrast => contrast ? color.dark_red : color.light_red,
@@ -29,5 +25,26 @@ export const theme = {
       light_yellow: color.light_yellow,
       dark_yellow: color.dark_yellow
     }
+  },
+  font: {
+    face: font.face,
+    weight: font.weight,
+    height: font.height,
+    space: font.space
+  },
+  corner: {
+    normal: '4px'
+  },
+  button: {
+    display: button.display,
+    padding: button.padding,
+    margin: button.margin,
+    align: button.align,
+    decoration: button.decoration,
+    whitespace: button.whitespace,
+    border: button.border,
+    cursor: button.cursor,
+    boxsize: button.boxsize,
+    outline: button.outline
   }
 };
