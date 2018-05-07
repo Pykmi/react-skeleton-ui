@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from './Theme';
 
 const BaseHeading = styled.h1`
   font-size: 4.0rem; line-height: 1.2; letter-spacing: -.1rem;
@@ -40,16 +41,20 @@ export const H6 = BaseHeading.extend`
 
 /* Bold text component */
 export const Strong = styled.strong`
-  font-weight: 600;
+  font-weight: ${props => props.theme.font.weight.heavy};
 `;
 
 /* Anchor component for links outside of react router */
 export const Anchor = styled.a`
-  color: #1EAEDB;
+  color: ${props => props.theme.color.primary()};
   text-decoration: none;
 
   :hover {
-    color: #0FA0CE;
+    color: ${props => props.theme.color.palette.dark_blue};
     text-decoration: none;
   }
 `;
+
+Anchor.defaultProps = {
+  theme
+}
