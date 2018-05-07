@@ -65,7 +65,7 @@ export const Column = styled.div`
   width: 100%;
   box-sizing: border-box;
 
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     margin-left: ${props => props.offset ? CalcOffset(props.offset) : GutterWidth + '%' };
     margin-top: 0;
     float: left;
@@ -83,7 +83,7 @@ export const Row = styled.div`
     clear: both;
   }
 
-  @media (min-width: 550px) {
+  @media (min-width: 640px) {
     margin-top: 1.0rem;
   }
 `;

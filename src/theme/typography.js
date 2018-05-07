@@ -9,7 +9,18 @@ export const face = {
 
 // font size
 export const size = {
-  normal: '1.4em'
+  tiny: '1.1em',
+  small: '1.25em',
+  normal: '1.4em',
+  large: '1.5em',
+  headers: {
+    h1: { desktop: '5.0rem', mobile: '4.0rem' },
+    h2: { desktop: '4.2rem', mobile: '3.6rem' },
+    h3: { desktop: '3.6rem', mobile: '3.0rem' },
+    h4: { desktop: '3.0rem', mobile: '2.4rem' },
+    h5: { desktop: '2.4rem', mobile: '1.8rem' },
+    h6: { desktop: '1.5rem', mobile: '1.5rem' },
+  }
 }
 
 // font weight

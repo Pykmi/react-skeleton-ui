@@ -3,6 +3,10 @@ import * as color from './theme/colors';
 import * as button from './theme/buttons';
 
 export const theme = {
+  screen: {
+    mobile: '640px',
+    desktop: '1024px'
+  },
   color: {
     primary: contrast => contrast ? color.blue : color.light_blue,
     error: contrast => contrast ? color.dark_red : color.light_red,

@@ -1,44 +1,69 @@
 import styled from 'styled-components';
 import { theme } from './Theme';
 
-const BaseHeading = styled.h1`
-  font-size: 4.0rem; line-height: ${props => props.theme.font.height.h1}; letter-spacing: ${props => props.theme.font.space.micro};
-  text-transform: ${props => props.upper ? 'uppercase' : ''};
-  margin: 2.0rem 0 1.0rem 0;
-`;
-
-BaseHeading.defaultProps = {
-  theme
-}
-
 /* Header components, from H1 through H6 */
-export const H1 = BaseHeading.extend`
-  @media (min-width: 550px) { font-size: 5.0rem; } /* Larger than phablet */
+const H1 = styled.h1`
+  line-height: ${props => props.theme.font.height.h1};
+  letter-spacing: ${props => props.theme.font.space.micro};
+  text-transform: ${props => props.upper ? 'uppercase' : ''};
+  margin-bottom: 2.0rem;
+  margin-top: 0;
+  font-weight: ${props => props.theme.font.weight.light};
+  font-size: ${props => props.font.size.H1.h1.mobile};
+
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h1.desktop};
+  }
 `;
 
-export const H2 = BaseHeading.extend`
-  font-size: 3.6rem; line-height: ${props => props.theme.font.height.h2}; letter-spacing: ${props => props.theme.font.space.micro};
-  @media (min-width: 550px) { font-size: 4.2rem; } /* Larger than phablet */
+export const H2 = H1.extend`
+  font-size: ${props => props.font.size.H1.h2.mobile};
+  line-height: ${props => props.theme.font.height.h2};
+  letter-spacing: ${props => props.theme.font.space.micro};
+  
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h2.desktop};
+  }
 `;
 
-export const H3 = BaseHeading.extend`
-  font-size: 3.0rem; line-height: ${props => props.theme.font.height.h3}; letter-spacing: ${props => props.theme.font.space.micro};
-  @media (min-width: 550px) { font-size: 3.6rem; } /* Larger than phablet */
+export const H3 = H1.extend`
+  font-size: ${props => props.font.size.H1.h3.mobile};
+  line-height: ${props => props.theme.font.height.h3};
+  letter-spacing: ${props => props.theme.font.space.micro};
+
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h3.desktop};
+  } 
 `;
 
-export const H4 = BaseHeading.extend`
-  font-size: 2.4rem; line-height: ${props => props.theme.font.height.h4};  letter-spacing: ${props => props.theme.font.space.micro};
-  @media (min-width: 550px) { font-size: 3.0rem; } /* Larger than phablet */
+export const H4 = H1.extend`
+  font-size: ${props => props.font.size.H1.h4.mobile};
+  line-height: ${props => props.theme.font.height.h4}; 
+  letter-spacing: ${props => props.theme.font.space.micro};
+
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h4.desktop}; 
+  }
 `;
 
-export const H5 = BaseHeading.extend`
-  font-size: 1.8rem; line-height: ${props => props.theme.font.height.h5}; letter-spacing: ${props => props.theme.font.space.micro};
-  @media (min-width: 550px) { font-size: 2.4rem; } /* Larger than phablet */
+export const H5 = H1.extend`
+  font-size: ${props => props.font.size.H1.h5.mobile};
+  line-height: ${props => props.theme.font.height.h5};
+  letter-spacing: ${props => props.theme.font.space.micro};
+
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h5.desktop};
+  }
 `;
 
-export const H6 = BaseHeading.extend`
-  font-size: 1.5rem; line-height: ${props => props.theme.font.height.normal};  letter-spacing: ${props => props.theme.font.space.normal};
-  @media (min-width: 550px) { font-size: 1.5rem; } /* Larger than phablet */
+export const H6 = H1.extend`
+  font-size: ${props => props.font.size.H1.h6.mobile};
+  line-height: ${props => props.theme.font.height.normal}; 
+  letter-spacing: ${props => props.theme.font.space.normal};
+
+  @media (min-width: ${props => props.theme.screen.mobile}) {
+    font-size: ${props => props.font.size.H1.h6.desktop}; 
+  }
 `;
 
 
@@ -57,6 +82,14 @@ export const Anchor = styled.a`
     text-decoration: none;
   }
 `;
+
+H1.defaultProps = {
+  theme
+}
+
+Strong.defaultProps = {
+  theme
+}
 
 Anchor.defaultProps = {
   theme
